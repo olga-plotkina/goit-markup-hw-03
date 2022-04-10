@@ -59,7 +59,6 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -76,7 +75,6 @@ body {
 .head-contacts .link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -95,7 +93,7 @@ body {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -106,7 +104,7 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
 }
 /* features */
@@ -119,7 +117,6 @@ body {
   }
 
 .feature-list .text {
-  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -184,13 +181,11 @@ body {
 }
 .address {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.7;
   color: var(--primary-white-color);
   text-decoration: none;
 }
 .contacts {
-  font-size: 14px;
   line-height: 1.7;
   font-style: normal;
   color: var(--primary-text-color);
