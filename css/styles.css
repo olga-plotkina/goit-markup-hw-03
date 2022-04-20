@@ -72,12 +72,22 @@ body {
 }
 
 /* site nav */
+
+.site-nav {
+  display: flex;
+}
+
+
 .site-nav .link {
+  display: block;
+  
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  padding: 32 25;
 }
 
 .site-nav .link:hover,
@@ -120,7 +130,7 @@ body {
 }
 
 /* section */
-ul, {
+ul {
   margin: 0;
   padding: 0;
 }
