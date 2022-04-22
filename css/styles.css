@@ -33,12 +33,9 @@ body {
   letter-spacing: 0,03em;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-  outline: 2px solid tomato;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -46,6 +43,14 @@ body {
   padding: 0;
   list-style: none;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
 
 /* logo */
 
@@ -58,9 +63,7 @@ body {
   line-height: 1.4;
  
 }
-.footer .logo {
-  color: var(--primary-white-color);
-}
+
 .logo-accent {
   color: var(--accent-color);
 }
@@ -68,26 +71,31 @@ body {
 /* Page header */
 
 .page-header {
-  background-color: #ccc;
+  background-color: var(--primary-white-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
 /* site nav */
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 
 .site-nav .link {
   display: block;
+  padding: 32px 25px;
   
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
-  padding: 32 25;
 }
 
 .site-nav .link:hover,
@@ -98,7 +106,21 @@ body {
   color: var(--accent-color);
 }
 
+/* head-contacts */
+
+.head-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.head-contacts .item + .item {
+  margin-left: 50px;
+}
 .head-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -130,10 +152,7 @@ body {
 }
 
 /* section */
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -153,6 +172,12 @@ ul {
   text-align: center;
 }
 /* features */
+.feature-list {
+  display: flex;
+}
+.feature-list .item {
+  width: 270px;
+}
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -228,6 +253,33 @@ ul {
 }
 
 /* portfolio main */
+.cases {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.case {
+  width: calc((100% - 60px)/3);
+  margin-right: 30px;
+}
+
+.case:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* .case:nth-child(3n) {
+  margin-right: 0;
+} */
+/* .case:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+/* .case:nth-last-child(-n +3) {
+  margin-bottom: 0;
+} */
+/* .case:not(:nth-last-child(-n +3)) {
+  margin-bottom: 30px;
+} */
 .cases-title {
   color: var(--title-text-color);
 
@@ -262,4 +314,8 @@ ul {
 
 .footer {
   background-color: var(--title-text-color)
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
 }
