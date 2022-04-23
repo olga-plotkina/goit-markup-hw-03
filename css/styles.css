@@ -25,6 +25,7 @@ html {
   --secondary-bgd-color: #F5F4FA;
   --dark-background: #2F303A;
   --border-color: #EEEEEE;
+  --border-header-color: #ECECEC;
 
   --card-set-gap: 30px;
 }
@@ -73,7 +74,9 @@ body {
 
 
 /* logo */
-
+.page-header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 .logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
@@ -103,6 +106,7 @@ body {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 93px;
 }
 
@@ -115,6 +119,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .site-nav .link:hover,
@@ -129,6 +134,7 @@ body {
 
 .head-contacts {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
@@ -144,6 +150,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .head-contacts .link:hover,
