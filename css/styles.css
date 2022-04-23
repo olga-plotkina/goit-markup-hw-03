@@ -23,6 +23,8 @@ html {
   --accent-color: #2196F3;
   --primary-white-color: #fff;
   --secondary-bgd-color: #F5F4FA;
+  --dark-background: #2F303A;
+  --border-color: #EEEEEE;
 }
 
 p,
@@ -39,7 +41,10 @@ h6 {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
 
+}
 body {
   margin: 0;
   background-color: var(--primary-white-color);
@@ -304,6 +309,7 @@ body {
   width: 370px;
 
   margin: 15px;
+
 }
 
 .case:nth-child(3n) {
@@ -340,6 +346,13 @@ body {
   font-size: 16px;
   line-height: 1.88;
 }
+.box {
+  padding: 20px 24px;
+
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
 .filter {
   display: flex;
   margin-bottom: 50px;
@@ -348,6 +361,7 @@ body {
 .filter .item + .item {
   margin-left: 8px;
 }
+
   /* footer */
 
 .address {
@@ -379,7 +393,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--title-text-color)
+  background-color: var(--dark-background)
 }
 
 .footer .logo {
