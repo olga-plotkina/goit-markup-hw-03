@@ -250,6 +250,10 @@ body {
 
 /* button */
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  border-width: 0;
+  padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--secondary-bgd-color);
 
@@ -257,6 +261,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+
 
   cursor: pointer;
 
@@ -338,6 +344,9 @@ body {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+}
+.filter .item + .item {
+  margin-left: 8px;
 }
   /* footer */
 
